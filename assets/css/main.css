@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+body{
+	background-color: #ededed;
+	font-family: 'Oswald';
+	position: relative;
+	margin-top: 0;
+}
+.site-header-bg{
+	height: 50vh;
+	position: absolute;
+	width: 100%;
+	background-color: #111;
+	z-index: 1;
+}
+.main{
+	background-color: #fff;
+	height: 100vh;
+	z-index: 1111;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
