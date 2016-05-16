@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 body{
 	background-color: #ededed;
 	font-family: 'Oswald';
@@ -13,6 +14,11 @@ body{
 .btn-robot, p{
 	font-family: 'Roboto';
 	line-height: 1.5;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+.mt0{
+	margin-top: 0;
 }
 .thin{
 	font-weight: 300;
@@ -30,11 +36,17 @@ body{
 	padding: 100px 0 50px;
 	text-transform: uppercase;
 }
+.title-box p{
+	margin-bottom: 0;
+}
 .title{
 	font-weight: 300;
 	color: #999;
 	font-size: 36px;
 	letter-spacing: 2px;
+}
+.title.mt0{
+	text-transform: capitalize;
 }
 .title span{
 	color: #444;
@@ -159,7 +171,6 @@ body{
 	color: #999;
 	font-size: 14px;
 	text-align: justify;
-	font-weight: 300;
 	margin-bottom: 30px;
 }
 .product p.p-large{
@@ -184,20 +195,73 @@ body{
 }
 .history p{
 	color: #fff;
-	letter-spacing: 1px;
-	font-weight: 300;
 }
 .history .title{
-	text-transform: capitalize;
 	color: #fabe12;
-	margin-top: 0;
-}
-.history .title-box{
-	/*padding-top: 100px;*/
-}
-.history .title-box p{
-	margin-bottom: 0;
 }
 .history img{
 	padding: 60px 0 0;
+}
+
+
+
+/*======================================================================
+##		History Section
+=======================================================================*/
+.partner .section-bg{
+	background-color: #fff;
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+
+
+
+/*======================================================================
+##		Footer widget Section
+=======================================================================*/
+.footer-widget{
+	padding: 80px 0;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+.footer-widget .section-bg{
+	background-color: #ebebeb;
+	text-align: center;
+	text-transform: capitalize;
+}
+.footer-widget h3{
+	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+	color: #999;
+	padding-bottom: 25px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.footer-widget ul{
+	padding-left: 0;
+}
+.footer-widget ul li{
+	list-style-type: none;
+	padding: 7px 0;
+}
+.footer-widget ul li:before{
+	content: "\f363";
+	font-family: 'ionicons';
+	padding-right: 5px;
+	font-size: 14px;
+	color: #999;
+}
+.footer-widget ul li a{
+	color: #999;
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 500;
+}
+.footer{
+	padding: 10px 0 20px;
+}
+.footer h3, .footer a{
+	color: #999;
+	font-weight: 300;
+	letter-spacing: 2px;
 }
