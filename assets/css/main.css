@@ -108,7 +108,7 @@ body{
 }
 .intro{
 	padding: 200px 0;
-    background-image: url(../images/1.jpg);
+    background-image: url(../images/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -122,6 +122,69 @@ body{
 	z-index: 10;
 	position: relative;
 }
+
+
+
+/*======================================================================
+##		Footer widget Section
+=======================================================================*/
+.footer-widget{
+	padding: 80px 0;
+	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+.footer-widget .section-bg{
+	background-color: #ebebeb;
+	text-align: center;
+	text-transform: capitalize;
+}
+.footer-widget h3{
+	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+	color: #999;
+	padding-bottom: 25px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+.footer-widget ul{
+	padding-left: 0;
+}
+.footer-widget ul li{
+	list-style-type: none;
+	padding: 7px 0;
+}
+.footer-widget ul li:before{
+	content: "\f363";
+	font-family: 'ionicons';
+	padding-right: 5px;
+	font-size: 14px;
+	color: #999;
+}
+.footer-widget ul li a{
+	color: #999;
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 500;
+}
+.widget-img-box{
+	margin-top: 30px;
+}
+.widget-img{
+	width: 49%;
+	display: inline-block;
+}
+.footer{
+	padding: 10px 0 20px;
+}
+.footer h3, .footer a{
+	color: #999;
+	font-weight: 300;
+	letter-spacing: 2px;
+}
+
+
+
+
+
 
 
 /*======================================================================
@@ -143,8 +206,6 @@ body{
 	background-color: #fabe12;
 	position: relative;
 	display: inline-block;
-	/*overflow-y: hidden;
-	overflow-x: visible;*/
 	margin-right: 56px;
 	z-index: 2;
 	margin-left: -15px;
@@ -206,62 +267,13 @@ body{
 
 
 /*======================================================================
-##		History Section
+##		Partner Section
 =======================================================================*/
 .partner .section-bg{
 	background-color: #fff;
 	text-align: center;
 	padding-bottom: 80px;
 }
-
-
-
-
-/*======================================================================
-##		Footer widget Section
-=======================================================================*/
-.footer-widget{
-	padding: 80px 0;
-	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
-}
-.footer-widget .section-bg{
-	background-color: #ebebeb;
-	text-align: center;
-	text-transform: capitalize;
-}
-.footer-widget h3{
-	border-bottom: 1px solid rgba(153, 153, 153, 0.3);
-	color: #999;
-	padding-bottom: 25px;
-	margin-bottom: 15px;
-	font-weight: 300;
-	letter-spacing: 2px;
-}
-.footer-widget ul{
-	padding-left: 0;
-}
-.footer-widget ul li{
-	list-style-type: none;
-	padding: 7px 0;
-}
-.footer-widget ul li:before{
-	content: "\f363";
-	font-family: 'ionicons';
-	padding-right: 5px;
-	font-size: 14px;
-	color: #999;
-}
-.footer-widget ul li a{
-	color: #999;
-	font-family: 'Roboto';
-	font-size: 14px;
-	font-weight: 500;
-}
-.footer{
-	padding: 10px 0 20px;
-}
-.footer h3, .footer a{
-	color: #999;
-	font-weight: 300;
-	letter-spacing: 2px;
+.partner .title{
+	color: #111;
 }
