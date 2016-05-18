@@ -85,11 +85,23 @@ body{
 	padding: 30px 0;
 	color: #fff;
 	text-transform: uppercase;
+	font-family: 'Roboto';
+}
+.site-header-bg .input-group{
+	padding-top: 10px;
+}
+.site-header-bg .form-control{
+	border-radius: 0;
+	background-color: transparent;
 }
 .site-header-bg .input-group .btn{
 	text-transform: uppercase;
+	border-radius: 0;
 }
-
+.site-header-bg .btn-robot{
+	margin-top: 0;
+	padding-bottom: 6px;
+}
 
 
 
