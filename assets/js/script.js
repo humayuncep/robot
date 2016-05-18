@@ -40,5 +40,22 @@ $(document).ready(function(){
         // end of Team box height
 
 
+    // Pop up
+        $('.test-popup-link').magnificPopup({
+            type:'image',
+            gallery:{
+                enabled:true
+            },
+            zoom: {
+                enabled: true,
+                duration: 300,
+                easing: 'ease-in-out',
+                opener: function(openerElement) {
+                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                }
+            }
+        }); //end of Pop Up
+
+
 
 }); // end of $(document).ready(function()
