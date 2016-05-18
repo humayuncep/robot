@@ -26,6 +26,7 @@ body{
 .c-table{
 	display: table;
 	height: 100%;
+	width: 100%;
 }
 .c-cell{
 	display: table-cell;
@@ -47,6 +48,7 @@ body{
 }
 .title.mt0{
 	text-transform: capitalize;
+	font-weight: 400;
 }
 .title span{
 	color: #444;
@@ -72,7 +74,6 @@ body{
 
 
 
-
 /*======================================================================
 ##		Header Section
 =======================================================================*/
@@ -81,7 +82,20 @@ body{
 	background-color: #111;
 	z-index: 1;
 	padding: 30px 0;
+	color: #fff;
+	text-transform: uppercase;
 }
+.site-header-bg .input-group .btn{
+	text-transform: uppercase;
+}
+
+
+
+
+
+/*======================================================================
+##		Header Section
+=======================================================================*/
 .main-header{
 	text-transform: uppercase;
 	text-align: center;
@@ -122,6 +136,8 @@ body{
 	z-index: 10;
 	position: relative;
 }
+
+
 
 
 
@@ -276,4 +292,204 @@ body{
 }
 .partner .title{
 	color: #111;
+}
+
+
+
+
+/*======================================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+##		Pages
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=======================================================================*/
+
+/*======================================================================
+##		Inner Header Sections
+=======================================================================*/
+.inner-header .intro{
+	padding: 100px 0;
+}
+.inner-header .breadcrumb{
+	margin-bottom: 0;
+	background-color: transparent;
+	font-size: 26px;
+	font-weight: 300;
+}
+.inner-header .breadcrumb>.active{
+	color: #fabe12;
+}
+.inner-header .breadcrumb a{
+	color: #fff;
+}
+.page-bgc{
+	background-color: #fff;
+	padding-bottom: 100px;
+}
+
+.intro{
+	background-color: #313131;
+}
+.faq-header .intro{
+	background-image: url(../images/faq-header.png);
+}
+.shop-header .intro{
+	background-image: url(../images/shop-header.png);
+}
+
+
+
+
+
+/*======================================================================
+##		FAQ
+=======================================================================*/
+/*.faq .page-bgc{
+	background-color: #fff;
+	padding-bottom: 100px;
+}*/
+.faq-p{
+	text-align: center;
+	margin-bottom: 80px;
+}
+.panel-heading {
+  padding: 0;
+  border-radius: 0;
+}
+.panel-heading h4.panel-title {
+  position: relative;
+  text-transform: capitalize;
+}
+.panel-heading a {
+  display: block;
+  padding: 15px 0 15px 40px;
+  line-height: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.panel-heading a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.panel-heading a:focus {
+  text-decoration: none;
+  color: #111;
+}
+.panel-heading a:active {
+  color: #111;
+}
+@media (min-width:768px) {
+  .panel-heading a:after,a.collapsed:after {
+    font-family: 'ionicons';
+    content: "\f126";
+    position: absolute;
+    right: 15px;
+    font-size: 18px;
+    color: #111;
+  }
+
+  a.collapsed:after {
+    content: "\f123";
+  }
+}
+.panel-body {
+  padding: 20px;
+  color: #999;
+  line-height: 1.7;
+}
+.panel-default {
+  border: 1px solid #111;
+}
+.panel-default>.panel-heading {
+  background-color: transparent;
+  transition: all 0.4s ease-in-out;
+}
+.panel-default>.panel-heading:hover{
+	background-color: #fabe12;
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top: 2px solid rgba(0,0,0,.1);
+}
+
+.panel-group .panel {
+  border-radius: 0;
+  margin-bottom: -5px;
+  border-bottom: none;
+}
+.panel-group .panel:last-child{
+	border-bottom: 1px solid #111;
+}
+
+
+
+
+/*======================================================================
+##		Shop
+=======================================================================*/
+/*.shop .page-bgc{
+	background-color: #fff;
+	padding-bottom: 100px;
+}*/
+.img-full{
+	width: 100%;
+}
+.shop-box{
+	position: relative;
+	overflow: hidden;
+}
+.shop-box-hover{
+	position: absolute;
+	left: -90%;
+	top: -90%;
+	background-color: #fabe12;
+	width: 100%;
+	height: 100%;
+	transition: all 0.4s ease-in-out;
+}
+.shop-box:hover .shop-box-hover{
+	top: 0;
+	left: 0;
+}
+.shop-box-hover .c-cell a{
+	font-size: 25px;
+	color: #111;
+	transition: all 0.4s ease-in-out;
+	padding: 8px;
+}
+.shop-box-hover .c-cell a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.shop-box-title{
+	font-family: 'Roboto';
+	text-transform: uppercase;
+	padding: 30px 0;
+	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.shop-box-title h4{
+	margin: 0 0 5px 0;
+	font-weight: 700;
+}
+.shop-price{
+	margin-bottom: 0;
+	font-weight: 500;
+}
+.star{
+	margin: 0;
+	color: #fabe12;
+}
+@media (min-width: 768px){
+	.shop-price, .star{
+		text-align: right;
+	}
+}
+.pager li>a, .pager li>span{
+	border-radius: 0;
+	color: #111;
+}
+.pager li>a:focus, .pager li>a:hover{
+	color: #fff;
+	border-color: #fabe12;
+	background-color: #fabe12;
 }
