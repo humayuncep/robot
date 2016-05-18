@@ -149,6 +149,26 @@ body{
 	z-index: 10;
 	position: relative;
 }
+.navbar{
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.navbar-default{
+	border-color: #262626;
+    background-color: #111;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	color: #fabe12;
+	background-color: transparent;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+}
 
 
 
