@@ -242,40 +242,57 @@ body{
 .product .section-bg{
 	background-color: #fff;
 }
+.porduct-box{
+	margin-bottom: 30px;
+	position: relative;
+}
+.porduct-box img{
+	width: 100% !important;
+}
+.product-title{
+	position: absolute;
+    top: 5px;
+    left: 25px;
+    right: 25px;
+    padding: 15px;
+    background-color: #fabe12;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
 .classic-title{
+	margin-top: 100px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 30px;
+	position: relative;
+}
+.incline-div{
+	position: absolute;
+	top: 3px;
+	left: 0;
+	border-top: 60px solid #fabe12;
+	border-right: 60px solid transparent;
+	margin-left: -15px;
+	width: 250px;
+	z-index: 1;
 }
 .outer-stiker{
 	display: inline-block;
 	color: #d0d0d0;
 }
 .stiker{
-	background-color: #fabe12;
-	position: relative;
 	display: inline-block;
-	margin-right: 56px;
-	z-index: 2;
-	margin-left: -15px;
-	padding-left: 15px;
-}
-.stiker:after{
-	position: absolute;
-	content: '';
-	height: 79.2px;
-	width: 79.2px;
-	transform: rotate(45deg);
-	right: -39px;
-	top: -39px;
-	background-color: #fabe12;
-	z-index: 1;
 }
 .inner-stiker{
 	color: #fff;
+	padding-right: 50px;
 }
 .outer-stiker, .inner-stiker{
 	font-weight: 300;
+	z-index: 2;
+	position: relative;
 }
 .product p{
 	color: #999;
@@ -713,6 +730,11 @@ body{
 .social a {
 	color: #fff;
 	padding: 8px;
+}
+@media (max-width: 767px){
+	.team-img{
+		width: 100%;
+	}
 }
 /*CTA*/
 /*****/

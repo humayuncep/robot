@@ -31,13 +31,25 @@ $(document).ready(function(){
             $('.map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
         }); //end of Turn off Google Map zooming
 
+
     // Team box height
         var h = $('.team-img-detail').height();
+        var mbottom = h;
         h = h/2;
         var top = $('.team-box').height();
         top = (top/2)-h;
-        $(".team-img-detail").css("top", top);
-        // end of Team box height
+        var win = $(window).width();
+
+        if ( win >= 768 ){
+            $(".team-img-detail").css("top", top);
+        } else {
+            $(".team-img-detail").css({
+                "bottom": -mbottom+20,
+                "left": "0",
+                "width": "100%"
+            });
+            $(".team-box").css("margin-bottom", mbottom+30);
+        }// end of Team box height
 
 
     // Pop up
